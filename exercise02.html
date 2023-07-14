@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sage Blogspot</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./IMG/formalsport.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 150px;
+      text-align: center;
+      /* background: url(./IMG/urban1.jpg); */
+      background-image: linear-gradient(to top right, rgba(14, 148, 32, 0.5), rgba(0, 0, 0, 0.5)), url(./IMG/urban1.jpg);
+      /* opacity: .85; */
+      /* background-position: center; */
+      color: #00ff00;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      color: dodgerblue;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #00ff00;
+      transition: .5s;
+      color: black;
+    }
+
+    /* Column container */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      background: whitesmoke;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 80%;
+      /* padding: 20px; */
+    }
+
+    .fakeimg img {
+      width: 100%;
+    }
+
+    .fakeimg1 {
+      width: 100%;
+      margin: 25px;
+      /* height: 80%; */
+    }
+
+    .fakeimg01 {
+      width: 100%;
+      height: 80%;
+      /* height: 200px; */
+      margin: 25px;
+    }
+
+    .st {
+      color: yellowgreen;
+    }
+
+    /* Footer */
+    .footer {
+      height: 20vh;
+      padding-top: 40px;
+      font-size: 11px;
+      text-align: center;
+      background: linear-gradient(to right, dodgerblue, #00ff00);
+      color: black;
+    }
+
+    .top {
+      text-decoration: none;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+
+      .row,
+      .navbar {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Note -->
+  <div style="background: linear-gradient(to right, dodgerblue, #00ff00);padding:5px">
+    <h4 style="text-align:center">Want to End Fake News ?</h4>
+  </div>
+
+  <!-- Header -->
+  <div class="header" id="home">
+    <h1>Sage's Blogspot</h1>
+    <em>
+      <p style="font-weight: 800;">The Home of <b>Reliable</b> and <b>Entertaining Articles</b> that will keep you
+        glued.</p>
+    </em>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar" id="home">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#what I do">What I Do</a>
+    <a href="#copyright">Copyright</a>
+  </div>
+
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <div class="side" id="about">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg"><img src="./IMG/aboutme.jpg" height="200px"></div>
+      <p>I am a <b class="st">Stylish</b> Reporter.</p>
+      <h3>know more about me</h3>
+      <p>What I Love ?</p>
+      <div class="fakeimg1" style="height:60px;"><img src="./IMG/business.jpg" width="50%"></div><br>
+      <div class="fakeimg1" style="height:60px;"><img src="./IMG/formalsport.jpg" width="50%"></div><br>
+      <div class="fakeimg01" style="height:60px;"><img src="./IMG/business.jpg" width="50%"></div>
+    </div>
+    <div class="main" id="porfolio">
+      <h2>STOCK EXCHANGE</h2>
+      <h5>Business, Dec 7, 2017</h5>
+      <div class="fakeimg1" style="height:200px; width: 500px;"><img src="./web images/7.jpg" style="height: 200px;">
+      </div>
+
+      <details>
+        <summary>The American Stock Exchange, a global residence of pecuniary investments and a culmination of European
+          exploits</summary><br>
+        The American Stock Exchange is Stock Market that encapsulates the entire trade in stocks, bonds, treasury bills
+        and so on.
+      </details>
+      <br>
+      <h2 id="portfolio">Transportation</h2>
+      <h5>Cable Cars, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px; margin: 20px;"><img src="./web images/img9.jpg" style="height: 200px; ">
+      </div>
+      <details>
+        <summary>Cable Cars in Hong Kong are a new technological advancement in the transportation line in the History
+          of China and Hong Kong as a whole.</summary><br>
+        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </details>
+
+    </div>
+
+    <div class="side" id="what I do">
+      <!-- <h2>About Me</h2> -->
+      <h5>Photos of what I do:</h5>
+      <div class="fakeimg"><img src="./web images/img3.png" height="200px"></div>
+      <p>I engage in all-round <b class="st">Stylish Arts</b>.</p>
+      <!-- <h3>know more about me</h3> -->
+      <p>What I Do ?</p>
+      <div class="fakeimg1" style="height:60px;"><img src="./web images/11.jpg" width="50%"></div><br>
+      <div class="fakeimg1" style="height:60px;"><img src="./web images/portfolio-4.jpg" width="50%"></div><br>
+      <div class="fakeimg01" style="height:60px;"><img src="./web images/portfolio-3.jpg" width="50%"></div>
+    </div>
+    <div class="main" id="newsletter">
+      <h2>Automobile</h2>
+      <h5>Porsche, Dec 10, 2027</h5>
+      <div class="fakeimg1" style="height:200px; width: 500px;"><img src="./web images/Porsche.jpg"
+          style="height: 200px;"></div>
+
+      <details>
+        <summary>The wait is finally over! the new and improved Porsche has finally been launched.</summary><br>
+        The New Porsche, a car of cars. A model of models. An Automobile of automobiles. A good step taken in the line
+        of automobile exploits in the world at large.
+      </details>
+      <br>
+      <h2 id="portfolio">Electronics</h2>
+      <h5>Iphone, Mar 2, 2019</h5>
+      <div class="fakeimg" style="height:200px; margin: 20px;"><img src="./web images/iphone 11.JPG"
+          style="height: 200px; "></div>
+      <details>
+        <summary>April 13th 2020!!! The Iphone11 pro-max is here.</summary><br>
+        Iphone SE, Iphone X, Iphone XR, Iphone XS max, fabulous models of the Mega "Apple". Now the IPHONE11 pro-max.
+        The overly awaited model is here! With the best camera and model-design yet, the idol is more than just a
+        smartphone, but a Dream possession.
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer" id="copyright">
+    <h2>&copy; Peju-Akinyemi Isaac</h2><a class="top" href="#home">Top</a>
+  </div>
+
+</body>
+
+</html>

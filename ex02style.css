@@ -1,0 +1,462 @@
+@import url(./fonts.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anton';
+}
+
+body{
+    margin: 0 5%;
+}
+
+nav{
+    line-height: 80px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.logo{
+    float: left;
+    display: flex;
+    background: red;
+}
+.nav-links{
+    z-index: 1;
+    position: fixed;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-links ul li{
+    margin: 0 40px;
+}
+.nav-links ul li a{
+    font-size: 18px;
+    font-weight: 800;
+    color: #494964;
+    text-decoration: none;
+}
+.nav-links ul li a:hover{
+    transition: .5s;
+    padding: 07px;
+    border-radius: 10px;
+    background: hotpink;
+    color: white;
+}
+.nav-links img{
+    width: 20px;
+    height: 20px;   
+}
+i{
+    margin-right: 5px;
+}
+
+
+            /*SECTION 1*/
+
+.main{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    background: #ffc61a;
+    filter: 5px 5px 5px whitesmoke;
+}            
+.main .captions{
+    width: 100%;
+    text-align: center;
+    animation: cap-animate 2s ease;
+}
+
+@keyframes cap-animate{
+    0%{
+        transition: translateX(-100px);
+        opacity: 0;
+    }   
+    100%{
+        transition: translateX(0px);
+        opacity: 1;
+    }
+}
+.captions .head{
+    margin-bottom: 70px;
+}
+.captions.head h1{
+    font-size: 200px;
+    font-weight: 700;
+    color: #494946;
+    text-transform: capitalize;
+}
+.intro{
+    font-family: cursive;
+    font-size: 50px;
+}
+.captions .head p{
+    font-size: 20px;
+    color: #494964;
+}
+.image{
+    display: flex;
+    float: right;
+    width: 85%;
+    margin-right: 20px;
+    filter: drop-shadow(0px 5px 10px purple);
+    animation: An-img 2s ease;
+}
+@keyframes An-img {
+    0%{
+        transition: translateY(-80px);
+        opacity: 0;
+    }
+    100%{
+        transition: translateY(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .image{
+        float: none;
+        width: 90%;
+        margin: 08%;
+        display: block;
+    }
+}
+
+                /*Call to ACtion <button>*/
+
+.cta a{
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+    padding: 15px 15px;
+    text-decoration: none;
+    filter: drop-shadow(0px 3px 10px magenta);
+    border: 2px solid #c38cbb;
+    border-radius: 20px;
+    background-color: #c38cbb;
+}               
+.cta a:hover{
+    filter: none;
+    background: none;
+    color: #c38cbb;
+}
+
+            /*Section Two (2)*/
+
+.header2{
+    margin-top: 10%;
+    font-size: 50px; 
+    font-weight: 800;
+    font-family: cursive;
+    text-align: center;
+    color:  rgb(255, 72, 0);
+}            
+.More{
+    padding: 0px;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: nowrap;
+    background: white;
+}
+.More img{ 
+    margin: 5px;
+    height: 80%;
+    width: 80%;
+    margin-left: 9%;
+}
+
+.More p{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: left;
+    color: hotpink;
+    margin-left: 10%;
+}
+
+                            /*THIRD SECTION*/
+
+#Quote{
+    height: 30vh;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.829);
+}                
+.quotes{
+    color: rgb(255, 72, 0);
+    font-size: 50px;
+    font-family: cursive;
+    margin-left: 40%;
+}            
+.quote{
+    color: whitesmoke;
+    font-size: 25px;
+    position: absolute;
+    left: 15%;
+    padding: 08%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.who{
+    color: black;
+    font-size: 25px;
+    margin-top: 12%;
+    margin-left: 0%;
+    font-family: cursive;
+}
+
+/*SECTION THREE*/
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .slideshow-container >*{
+    padding: 0px;
+    border-radius: 0%;
+    flex: 100%;
+    overflow: hidden;
+  }
+ 
+  /* Caption text */
+  .text {
+    color: orangered;
+    font-size: 1.5vw;
+    font-family:cursive;
+    font-weight:800;
+    padding: 8px 12px;
+    top: 10%;
+    left: 1%;
+    position: absolute;
+    text-align: center;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+  .penultimate{
+    height: 30vh;
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid magenta;
+  }
+  .penultimate .heading{
+    color: rgb(255, 72, 0);
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 10%;
+  }
+  .penultimate button{
+    color: #fff;
+    margin-left: 25%;
+    margin-top: 20%;
+    font-size: 20px;
+    transition: 0.4s;
+    padding: 15px 15px;
+    text-decoration: none;
+    filter: drop-shadow(0px 3px 10px magenta);
+    border: 2px solid #c38cbb;
+    border-radius: 20px;
+    background-color: #c38cbb;
+  }
+  .penultimate button:hover{
+    filter: none;
+    background: none;
+    color: rgb(255, 72, 0);
+  }
+  .penultimate .icons{
+    color: purple;
+    font-size: 30px;
+    font-weight: 800;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 05%;
+  }
+  .penultimate i:hover{ 
+    color: rgb(255, 72, 0);
+    transition: .5s;
+  }
+
+                            /*FOOTER*/
+
+footer{ 
+    height: 5vh;
+    width: 100%;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.904);
+}               
+footer p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-top: 100px;
+    text-align: center;
+    color: whitesmoke;
+}             
+footer i{
+    color: rgb(255, 72, 0);
+}
+
+
+                            /*MEDIA QUERIES*/
+@media screen and (max-width: 1000px) {
+    .penultimate{
+        margin-top: 30%;
+    }
+    .penultimate h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 750px) {
+    .nav-links ul{
+        position: fixed;
+        top: 0;
+        left: -1000px;
+        flex-direction: column;
+        background-color: #c38cbb;
+        height: 100vh;
+        z-index: 999;
+        transition: 0.7s;
+    }
+
+    .nav-links ul li a{
+        color: #fff;
+    }
+
+    #menubar{
+        position: absolute;
+        right: 0;
+        transition: translate(-30px 26px);
+    }
+    #menubar .bar{
+        width: 25px;
+        height: 4px;
+        margin-right: 20px;
+        background: #494964;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+#links-inside.active{
+    left: 0;
+    }
+    .main{
+        padding: 25px;
+        height: 65%;
+    }
+    .More{
+       display: grid;
+    }
+    .headre2{
+        font-size: 20px;
+    }
+    #Quote{
+        height: 50vh;
+        
+    }
+    .quotes{
+        margin-left: 30%;
+        font-size: 23px;
+    }
+    .quote{
+        margin-top: 15%;
+        margin-left: 0%;
+        font-size: 17px;
+    }
+    .who{
+        margin-top: 50%;
+        margin-left: 0;
+        font-size: 20px;
+        position: relative;
+    }
+    .penultimate{
+        display: block;
+        height: 40vh;
+        margin-top: 40%;
+    }
+    .penultimate h1{
+        font-size: 30px; 
+        margin: 0;
+    }
+    .penultimate button{
+        margin-top: 10px;
+        margin-left: 10%;
+    }
+}                
+
+@media (max-width: 770px) {
+    .main{
+        flex-direction: column;
+        margin-top: 5vw;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .main .captions{
+        width: 100%;
+        margin-bottom: 10vh;
+        text-align: center;
+    }
+    .main .caption h1{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+    .penultimate{
+        margin-top: 60%; 
+        height: 40vh;
+    }
+    .penultimate button{
+        margin-top: 10px;
+    }
+    .penultimate i{
+        top: 25%;
+        left: 0;
+        position: relative; 
+    }
+}
+@media screen and (max-width: 370px) {
+    .penultimate{
+        margin-top: 40vh;
+    }
+}
+
